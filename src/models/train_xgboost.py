@@ -19,6 +19,7 @@ Usage: python3 src/models/train_xgboost.py
 """
 
 import csv
+import sys
 from pathlib import Path
 
 import numpy as np
@@ -30,6 +31,7 @@ from xgboost import XGBClassifier
 ANNOT_DIR = Path("data/annotations")
 N_FOLDS = 5
 SEED = 42
+DATASET_STEM = sys.argv[1] if len(sys.argv) > 1 else "dataset_consolidated"
 
 FEATURE_COLS = [
     "entail_AB", "neutral_AB", "contra_AB",
@@ -40,9 +42,9 @@ FEATURE_COLS = [
 
 
 def load_joined():
-    base = pd.read_csv(ANNOT_DIR / "dataset_consolidated.csv")
-    nli = pd.read_csv(ANNOT_DIR / "dataset_consolidated_nli_features.csv")
-    spec = pd.read_csv(ANNOT_DIR / "dataset_consolidated_specificity_features.csv")
+    base = pd.read_csv(ANNOT_DIR / f"{DATASET_STEM}.csv")
+    nli = pd.read_csv(ANNOT_DIR / f"{DATASET_STEM}_nli_features.csv")
+    spec = pd.read_csv(ANNOT_DIR / f"{DATASET_STEM}_specificity_features.csv")
 
     df = base.merge(nli, on="pair_id", how="inner").merge(spec, on="pair_id", how="inner")
     return df
@@ -101,7 +103,7 @@ def main():
     results.append(run_shape(df, "motte_bailey", "MOTTE_BAILEY"))
     results.append(run_shape(df, "strawman", "STRAWMAN"))
 
-    out_path = ANNOT_DIR / "xgboost_results_summary.csv"
+    out_path = ANNOT_DIR / f"{DATASET_STEM}_xgboost_results_summary.csv"
     with open(out_path, "w", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=["shape", "n", "positive", "accuracy", "precision", "recall", "f1"])
         writer.writeheader()
