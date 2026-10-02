@@ -1,8 +1,10 @@
 # 11. Figures Index
 
-All figures are 300 DPI PNGs in `figures/`, generated via the scripts in
-`src/figures/`. Each entry below: what it shows, what it's honest about (its
-limits), and suggested placement.
+All figures are 300 DPI PNGs, copied into `report_prep/figures/` for
+convenience (originals in `figures/` at the repo root, generated via the
+scripts in `src/figures/` — both copies are identical, kept in sync manually).
+Each entry below: what it shows, what it's honest about (its limits), and
+suggested placement.
 
 ## `figures/dataset_funnel.png`
 - **Shows**: horizontal bar chart, log-scaled x-axis, six stages from
