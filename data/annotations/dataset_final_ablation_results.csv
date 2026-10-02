@@ -1,0 +1,7 @@
+shape,feature_set,n,accuracy,precision,recall,f1
+motte_bailey,NLI only,58,0.724,0.731,0.679,0.704
+motte_bailey,Specificity only,58,0.5,0.483,0.5,0.491
+motte_bailey,NLI + Specificity,58,0.569,0.545,0.643,0.59
+strawman,NLI only,53,0.566,0.594,0.655,0.623
+strawman,Specificity only,53,0.528,0.571,0.552,0.561
+strawman,NLI + Specificity,53,0.547,0.586,0.586,0.586
