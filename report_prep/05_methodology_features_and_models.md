@@ -106,6 +106,11 @@ precisely since the two approaches can differ).
 
 ## Zero-shot LLM baseline
 
+**Model used: Claude Sonnet 5 (model ID `claude-sonnet-5`, Anthropic).** State
+this explicitly in the report — "a zero-shot LLM" alone is not specific
+enough for a methods section. No other model was evaluated as a zero-shot
+baseline in this project.
+
 **Setup**: given only `claim_A` / `challenge` / `claim_B` text (no
 structural/discourse features, no training on this dataset), predict the
 per-shape binary label. Run on the 91 real examples only (the 20 synthetic
@@ -118,10 +123,11 @@ copy of the data, with the true label never consulted until after a
 prediction was already recorded — the standard procedure for a baseline to
 be meaningful.
 
-**Required limitation — state this explicitly, do not omit or bury it**: the
-same model that performed the manual claim extraction for this dataset
-(file 03) also produced these zero-shot predictions, within the same
-overall project context. This is **not a fully independent, arms-length
+**Required limitation — state this explicitly, do not omit or bury it**:
+Claude Sonnet 5, the same model that performed the manual claim extraction
+for this dataset (file 03), also produced these zero-shot predictions,
+within the same overall project context (a forked subagent session sharing
+conversation history with the session that did the extraction). This is **not a fully independent, arms-length
 zero-shot evaluation** — residual familiarity with specific examples from the
 extraction process cannot be ruled out. The reported 0.750/0.800 F1 numbers
 should be read with this caveat attached, not presented as a clean,

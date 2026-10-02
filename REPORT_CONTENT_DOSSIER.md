@@ -347,12 +347,14 @@ per shape, rather than one 3-way model).
   (MOTTE_BAILEY or STRAWMAN respectively), confusion matrix.
 - **Datasets evaluated**: (a) 91 real-only examples, (b) 111 real+synthetic —
   reported side by side (§10.2), not merged into one number.
-- **Zero-shot LLM baseline**: given only claim_A / challenge / claim_B (no
-  structural/discourse features, no training), predicts the per-shape binary
-  label. Run on the 91 real examples only (not the synthetic 20).
-  **Required limitation to state explicitly, do not omit**: the same model
-  that performed the manual claim extraction for this dataset also produced
-  these zero-shot predictions (via a shared session/context), so this is not
+- **Zero-shot LLM baseline**: model used is **Claude Sonnet 5** (model ID
+  `claude-sonnet-5`, Anthropic) — name it explicitly in the report, "a
+  zero-shot LLM" alone is not specific enough. Given only claim_A / challenge
+  / claim_B (no structural/discourse features, no training), predicts the
+  per-shape binary label. Run on the 91 real examples only (not the
+  synthetic 20).
+  **Required limitation to state explicitly, do not omit**: Claude Sonnet 5
+  also performed the manual claim extraction for this dataset, so this is not
   a fully independent, arms-length zero-shot evaluation — residual
   familiarity with specific examples cannot be ruled out. Name this as a
   threat to validity for this specific number, not a footnote.

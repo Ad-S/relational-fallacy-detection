@@ -14,6 +14,12 @@ raw texts into clean, short, decontextualized claims.
 
 ## Process
 
+**Performed by**: Claude Sonnet 5 (model ID `claude-sonnet-5`, Anthropic),
+reading and transcribing directly within the project's working sessions —
+not a separate scripted API call. This matters later: the zero-shot baseline
+(file 05) was run by the same model, which is why its independence is
+explicitly caveated there.
+
 For each sampled candidate, the raw `claim_A` / `challenge` / `claim_B` text
 was read in full and one of three outcomes assigned:
 

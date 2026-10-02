@@ -44,7 +44,7 @@ sentences — these files are reference material, not the report itself.
 - **Final dataset: 111** (28 MOTTE_BAILEY, 29 STRAWMAN, 54 NONE)
 - XGBoost F1 (91 real): Motte 0.579, Strawman 0.591
 - XGBoost F1 (111 combined): Motte 0.590, Strawman 0.586
-- Zero-shot LLM F1 (91 real): Motte 0.750, Strawman 0.800
+- Zero-shot LLM F1 (91 real): Motte 0.750, Strawman 0.800 — model used: **Claude Sonnet 5** (`claude-sonnet-5`), same model that performed claim extraction (see file 05's independence caveat)
 - Ablation: NLI-only accuracy 0.724 (Motte) vs. NLI+Specificity 0.569 (Motte)
 - `explicit_denial_B` rate: 37.4% real vs. 0.0% synthetic
 - Repo: https://github.com/Ad-S/relational-fallacy-detection (public)
