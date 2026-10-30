@@ -21,7 +21,7 @@ C = {"ft": "#2a78d6", "plain": "#86b6ef", "xgb": "#1baf7a", "q32": "#eb6834", "q
      "bonly": "#a9a8a1", "real": "#2a78d6", "hand": "#1baf7a", "var": "#a9a8a1"}
 SH = {"motte_bailey": "Motte-and-bailey", "strawman": "Strawman"}
 POS = {"motte_bailey": "MOTTE_BAILEY", "strawman": "STRAWMAN"}
-plt.rcParams.update({"font.size": 8, "axes.titlesize": 9, "axes.labelsize": 8, "legend.fontsize": 7.5,
+plt.rcParams.update({"pdf.fonttype": 42, "ps.fonttype": 42, "font.size": 8, "axes.titlesize": 9, "axes.labelsize": 8, "legend.fontsize": 7.5,
                      "xtick.labelsize": 7.5, "ytick.labelsize": 7.5, "axes.spines.top": False,
                      "axes.spines.right": False, "axes.edgecolor": "#c3c2b7", "axes.labelcolor": INK2,
                      "xtick.color": INK2, "ytick.color": INK2, "legend.frameon": False, "savefig.bbox": "tight",

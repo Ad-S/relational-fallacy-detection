@@ -1,0 +1,4 @@
+config,pair_evaluations,both_correct,prediction_changes
+xgb_NLI + Specificity,100,0.3,0.5
+nli_pair,100,0.51,0.55
+nli_bonly,60,0.5166666666666667,0.6
