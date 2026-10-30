@@ -1,0 +1,3 @@
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]Loading weights:  81%|████████▏ | 321/394 [00:00<00:00, 3179.33it/s]Loading weights: 100%|██████████| 394/394 [00:00<00:00, 3215.50it/s]
+{"rows": 683, "sec": 7.9, "device": "cuda", "check_rows": 188, "check_max_abs_diff": 0.007800000000000029}
+wrote /home/finetune/results/features/dataset_augmented_all_v2_nli_features.csv

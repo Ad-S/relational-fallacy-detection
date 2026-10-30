@@ -1,0 +1,10 @@
+# Local environment (data pipeline, features, XGBoost, analysis, figures). Versions used for the final results.
+convokit==4.1.2
+pandas==3.0.6
+numpy==2.5.3
+scikit-learn==1.9.1
+xgboost==3.4.1
+torch==2.14.0
+transformers==5.17.0
+matplotlib==3.11.2
+# GPU runs use their own requirements: finetune/requirements.txt and llm_bundle/requirements.txt

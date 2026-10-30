@@ -1,0 +1,62 @@
+{
+  "start": "17:43:09 UTC",
+  "hours_limit": 2.5,
+  "steps": [
+    {
+      "step": "smoke_qwen7b",
+      "status": "ok",
+      "minutes": 3.6,
+      "log": "results/logs/smoke_qwen7b.log",
+      "last_lines": [
+        "(EngineCore pid=538) INFO 10-30 17:46:43 [core.py:1558] [shutdown] EngineCore: start mode=abort timeout=0s",
+        "(EngineCore pid=538) INFO 10-30 17:46:43 [core.py:1589] [shutdown] EngineCore: request processing complete; starting resource teardown",
+        "(EngineCore pid=538) INFO 10-30 17:46:43 [core.py:1422] [shutdown] EngineCore: exiting busy loop"
+      ]
+    },
+    {
+      "step": "smoke_stage2",
+      "status": "ok",
+      "minutes": 0.3,
+      "log": "results/logs/smoke_stage2.log",
+      "last_lines": [
+        "Loading weights:  86%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258c | 339/394 [00:00<00:00, 3384.81it/s]",
+        "Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 394/394 [00:00<00:00, 3501.22it/s]",
+        "Qwen2.5-7B-Instruct_smoke: 10 rows, flagged 9, x_claim present 9"
+      ]
+    },
+    {
+      "step": "qwen7b",
+      "status": "ok",
+      "minutes": 0.7,
+      "log": "results/logs/qwen7b.log",
+      "last_lines": [
+        "(EngineCore pid=1431) INFO 10-30 17:47:46 [core.py:1558] [shutdown] EngineCore: start mode=abort timeout=0s",
+        "(EngineCore pid=1431) INFO 10-30 17:47:46 [core.py:1589] [shutdown] EngineCore: request processing complete; starting resource teardown",
+        "(EngineCore pid=1431) INFO 10-30 17:47:46 [core.py:1422] [shutdown] EngineCore: exiting busy loop"
+      ]
+    },
+    {
+      "step": "qwen32b",
+      "status": "ok",
+      "minutes": 6.1,
+      "log": "results/logs/qwen32b.log",
+      "last_lines": [
+        "(EngineCore pid=1767) INFO 10-30 17:53:52 [core.py:1558] [shutdown] EngineCore: start mode=abort timeout=0s",
+        "(EngineCore pid=1767) INFO 10-30 17:53:52 [core.py:1589] [shutdown] EngineCore: request processing complete; starting resource teardown",
+        "(EngineCore pid=1767) INFO 10-30 17:53:52 [core.py:1422] [shutdown] EngineCore: exiting busy loop"
+      ]
+    },
+    {
+      "step": "stage2",
+      "status": "ok",
+      "minutes": 0.2,
+      "log": "results/logs/stage2.log",
+      "last_lines": [
+        "Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 394/394 [00:00<00:00, 4688.03it/s]",
+        "Qwen2.5-32B-Instruct: 683 rows, flagged 552, x_claim present 553",
+        "Qwen2.5-7B-Instruct: 683 rows, flagged 555, x_claim present 555"
+      ]
+    }
+  ],
+  "end": "17:54:09 UTC"
+}

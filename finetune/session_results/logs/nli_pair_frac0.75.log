@@ -1,0 +1,61 @@
+{
+ "start_utc": "2026-10-30T15:05:14.143921+00:00",
+ "device": "cuda",
+ "python": "3.10.20",
+ "torch": "2.11.0+cu130",
+ "transformers": "5.20.2",
+ "gpu": "NVIDIA H200",
+ "gpu_mem_gb": 150.1,
+ "bf16_supported": true
+}
+[transformers] You passed `num_labels=2` which is incompatible to the `id2label` map of length `3`.
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]Loading weights: 100%|██████████| 394/394 [00:00<00:00, 4284.06it/s]
+[transformers] [1mDebertaV2ForSequenceClassification LOAD REPORT[0m from: MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli
+Key               | Status   |                                                                                         
+------------------+----------+-----------------------------------------------------------------------------------------
+classifier.weight | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([3, 1024]) vs model:torch.Size([2, 1024])
+classifier.bias   | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([3]) vs model:torch.Size([2])            
+
+Notes:
+- MISMATCH:	ckpt weights were loaded, but they did not match the original empty weight shapes.
+model loaded in 2.7s; 435M params
+[motte_bailey seed=0 fold=0] train_n=201 (aug 0) test_n=74 15.9s
+[motte_bailey seed=0 fold=1] train_n=203 (aug 0) test_n=75 15.0s
+[motte_bailey seed=0 fold=2] train_n=206 (aug 0) test_n=69 14.8s
+[motte_bailey seed=0 fold=3] train_n=203 (aug 0) test_n=75 15.1s
+[motte_bailey seed=0 fold=4] train_n=209 (aug 0) test_n=60 15.8s
+[motte_bailey seed=1 fold=0] train_n=203 (aug 0) test_n=75 15.1s
+[motte_bailey seed=1 fold=1] train_n=218 (aug 0) test_n=69 16.4s
+[motte_bailey seed=1 fold=2] train_n=209 (aug 0) test_n=69 15.9s
+[motte_bailey seed=1 fold=3] train_n=212 (aug 0) test_n=78 16.0s
+[motte_bailey seed=1 fold=4] train_n=213 (aug 0) test_n=62 15.0s
+[motte_bailey seed=2 fold=0] train_n=213 (aug 0) test_n=68 15.3s
+[motte_bailey seed=2 fold=1] train_n=207 (aug 0) test_n=72 14.4s
+[motte_bailey seed=2 fold=2] train_n=210 (aug 0) test_n=69 16.4s
+[motte_bailey seed=2 fold=3] train_n=209 (aug 0) test_n=72 16.1s
+[motte_bailey seed=2 fold=4] train_n=206 (aug 0) test_n=72 14.9s
+[strawman seed=0 fold=0] train_n=201 (aug 0) test_n=66 14.6s
+[strawman seed=0 fold=1] train_n=195 (aug 0) test_n=69 14.1s
+[strawman seed=0 fold=2] train_n=198 (aug 0) test_n=66 14.6s
+[strawman seed=0 fold=3] train_n=198 (aug 0) test_n=69 14.7s
+[strawman seed=0 fold=4] train_n=207 (aug 0) test_n=60 15.5s
+[strawman seed=1 fold=0] train_n=198 (aug 0) test_n=66 15.0s
+[strawman seed=1 fold=1] train_n=192 (aug 0) test_n=75 14.5s
+[strawman seed=1 fold=2] train_n=201 (aug 0) test_n=66 14.7s
+[strawman seed=1 fold=3] train_n=201 (aug 0) test_n=60 14.2s
+[strawman seed=1 fold=4] train_n=198 (aug 0) test_n=63 13.8s
+[strawman seed=2 fold=0] train_n=195 (aug 0) test_n=66 14.5s
+[strawman seed=2 fold=1] train_n=189 (aug 0) test_n=69 14.4s
+[strawman seed=2 fold=2] train_n=192 (aug 0) test_n=72 13.7s
+[strawman seed=2 fold=3] train_n=198 (aug 0) test_n=63 14.0s
+[strawman seed=2 fold=4] train_n=198 (aug 0) test_n=60 14.1s
+
+=== summary (mean/std over seeds) ===
+              accuracy            f1        masked_accuracy        masked_f1       
+                 mean    std   mean    std            mean    std      mean    std
+shape                                                                             
+motte_bailey    0.620  0.057  0.511  0.058           0.611  0.041     0.466  0.112
+strawman        0.666  0.015  0.699  0.016           0.668  0.020     0.708  0.022
+
+RESULTS_DIR=/home/finetune/results/nli_pair_frac0.75
+wall 473.6s, 0.096 s/step

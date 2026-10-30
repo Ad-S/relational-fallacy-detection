@@ -1,0 +1,17 @@
+config,shape,seed,fold,pair_id,source,source_pair_id,kind,y,prob,pred,prob_masked,pred_masked
+session,motte_bailey,0,0,m006,reddit_cmv,,original,1,0.469033807516098,0,0.5627171993255615,1
+session,motte_bailey,0,0,m022,reddit_cmv,,original,0,0.45532724261283875,0,0.45532724261283875,0
+session,motte_bailey,0,0,m024,reddit_cmv,,original,1,0.4216708838939667,0,0.4266201853752136,0
+session,motte_bailey,0,0,m026,reddit_cmv,,original,0,0.4636567234992981,0,0.4599250257015228,0
+session,motte_bailey,0,0,m054,reddit_cmv,,original,0,0.33090347051620483,0,0.41099265217781067,0
+session,motte_bailey,0,0,m062,reddit_cmv,,original,1,0.42847251892089844,0,0.39396777749061584,0
+session,motte_bailey,0,0,m069,reddit_cmv,,original,1,0.4630800187587738,0,0.41789495944976807,0
+session,motte_bailey,0,0,m074,reddit_cmv,,original,0,0.39140594005584717,0,0.4000459909439087,0
+session,strawman,0,0,s004,reddit_cmv,,original,1,0.631026029586792,1,0.6222872138023376,1
+session,strawman,0,0,s005,reddit_cmv,,original,1,0.6025294065475464,1,0.6153190732002258,1
+session,strawman,0,0,s016,reddit_cmv,,original,0,0.5426208972930908,1,0.5556612610816956,1
+session,strawman,0,0,s017,reddit_cmv,,original,1,0.6092917323112488,1,0.5717666149139404,1
+session,strawman,0,0,s019,reddit_cmv,,original,1,0.5954925417900085,1,0.5820159912109375,1
+session,strawman,0,0,s026,reddit_cmv,,original,1,0.5936092734336853,1,0.6050992012023926,1
+session,strawman,0,0,s035,reddit_cmv,,original,1,0.5691941976547241,1,0.5585076212882996,1
+session,strawman,0,0,s039,reddit_cmv,,original,0,0.557303249835968,1,0.5195213556289673,1

@@ -1,0 +1,14 @@
+Loading weights:   0%|          | 0/390 [00:00<?, ?it/s]Loading weights: 100%|██████████| 390/390 [00:00<00:00, 4482.87it/s]
+[transformers] [1mDebertaV2Model LOAD REPORT[0m from: MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli
+Key                 | Status     |  | 
+--------------------+------------+--+-
+pooler.dense.bias   | UNEXPECTED |  | 
+classifier.weight   | UNEXPECTED |  | 
+classifier.bias     | UNEXPECTED |  | 
+pooler.dense.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[deberta_nli motte_bailey] n=30 layers=25 best AUC 0.658 at layer 11
+[deberta_nli strawman] n=30 layers=25 best AUC 0.742 at layer 22
+wrote /home/finetune/results/probing_smoke/probe_results.csv in 6s

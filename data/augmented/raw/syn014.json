@@ -1,0 +1,47 @@
+{
+  "seed": "syn014",
+  "attempt": 1,
+  "model_requested": "claude-sonnet-5-5",
+  "prompt": "Definitions:\n- MOTTE_BAILEY: a speaker makes Claim A; another person challenges it (Challenge C); the ORIGINAL speaker replies with Claim B that retreats to a narrower, weaker or more easily defensible position while presenting it as if it still defends Claim A.\n- STRAWMAN: one person makes Claim A; a DIFFERENT person replies with Claim B that misrepresents Claim A as a different, stronger or more extreme position and argues against that distorted version.\n- NONE: no such move - an honest clarification, an open concession, a fair paraphrase, a genuine question, or ordinary disagreement with what was actually said.\n\nHere is a hand-written strawman-shaped (A, then a different person's reply B) example with its label:\n\nClaim A: There should be a proper balance between chilling and working hard. Life isn't fun if you do only one thing, and there's no fun in constantly chilling without also having days when you're working hard toward something.\nClaim B: Working hard can mean anything, not just corporate work. If someone is a painter, then painting is work for them, not fun.\nLabel: STRAWMAN\n\nWrite exactly 5 new examples and return them as JSON:\n{\"variants\": [{\"kind\": \"...\", \"claim_A\": \"...\", \"challenge\": \"...\", \"claim_B\": \"...\", \"label\": \"...\"}]}\n\nVariants 1-2, kind \"paraphrase\": the SAME exchange reworded with different words and sentence structure, same meaning, same rhetorical move. label: STRAWMAN.\nVariants 3-4, kind \"topic_transfer\": a DIFFERENT everyday debate topic (a different one for each), with the SAME logical move as the original. label: STRAWMAN.\nVariant 5, kind \"flip\": copy Claim A word for word, and minimally rewrite Claim B so that the reply now responds to what Claim A actually says (a fair paraphrase or genuine disagreement) without distorting it. label: NONE.\n\nStyle: informal, like real Reddit comments; similar length to the original; 1-3 sentences per claim. Never name the fallacy in the text. This shape has no challenge: set \"challenge\" to an empty string in every variant.",
+  "stdout": "{\"duration_api_ms\":9910,\"stop_reason\":\"end_turn\",\"session_id\":\"e5d19eec-daf5-465b-9302-cf4412aff8da\",\"total_cost_usd\":0.012708,\"usage\":{\"input_tokens\":2,\"cache_creation_input_tokens\":1301,\"cache_read_input_tokens\":0,\"output_tokens\":750,\"output_tokens_details\":{\"thinking_tokens\":0},\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":1301,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"global\",\"iterations\":[{\"input_tokens\":2,\"output_tokens\":750,\"cache_read_input_tokens\":0,\"cache_creation_input_tokens\":1301,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":1301},\"type\":\"message\"}],\"speed\":\"standard\",\"fallback_credit\":null},\"modelUsage\":{\"claude-sonnet-5-5\":{\"inputTokens\":2,\"outputTokens\":750,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":1301,\"webSearchRequests\":0,\"costUSD\":0.012708,\"contextWindow\":1000000,\"maxOutputTokens\":128000,\"thinkingTokens\":0,\"cacheCreationEphemeral5mInputTokens\":0,\"cacheCreationEphemeral1hInputTokens\":1301,\"canonicalModel\":\"claude-sonnet-5-5\",\"provider\":\"firstParty\",\"costBasis\":\"list\"}},\"permission_denials\":[],\"terminal_reason\":\"completed\",\"fast_mode_state\":\"off\",\"fast_mode_disabled_reason\":\"sdk_opt_in_required\",\"subagent_stats\":{\"spawned\":0,\"requested\":{\"background\":0,\"foreground\":0,\"unset\":0},\"started_in_background\":0,\"max_depth\":0,\"spawned_by_subagents\":0,\"completed\":0,\"failed\":0,\"killed\":{\"parent\":0,\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"safety_stops\":0,\"is_error\":false,\"num_turns\":1,\"subtype\":\"success\",\"api_error_status\":null,\"result\":\"{\\\"variants\\\": [{\\\"kind\\\": \\\"paraphrase\\\", \\\"claim_A\\\": \\\"You need some kind of balance between taking it easy and grinding. Doing just one of them gets old, because relaxing feels empty if you never have stretches where you're pushing toward a goal.\\\", \\\"challenge\\\": \\\"\\\", \\\"claim_B\\\": \\\"Grinding isn't only a office job thing. For a painter, painting is the work, so it's not exactly fun for them.\\\", \\\"label\\\": \\\"STRAWMAN\\\"}, {\\\"kind\\\": \\\"paraphrase\\\", \\\"claim_A\\\": \\\"Honestly I think you want a mix of lazy days and productive days. Only doing one gets boring, and lazing around doesn't feel as good if you never put in effort on something.\\\", \\\"challenge\\\": \\\"\\\", \\\"claim_B\\\": \\\"Effort can be anything though, not just a regular job. A musician practicing is working, so for them that's not fun at all.\\\", \\\"label\\\": \\\"STRAWMAN\\\"}, {\\\"kind\\\": \\\"topic_transfer\\\", \\\"claim_A\\\": \\\"I think it's good to mix eating out and cooking at home. Restaurants get old if that's all you do, and home cooking feels more rewarding when you also get to enjoy a meal someone else makes.\\\", \\\"challenge\\\": \\\"\\\", \\\"claim_B\\\": \\\"Cooking can mean all kinds of things, not just fancy dinners. If someone's a chef, cooking is their job, so it's never relaxing for them.\\\", \\\"label\\\": \\\"STRAWMAN\\\"}, {\\\"kind\\\": \\\"topic_transfer\\\", \\\"claim_A\\\": \\\"Imo you should split your free time between gaming and being outside. Gaming nonstop gets stale, and going outside is nicer when you also have some days where you're deep into a good game.\\\", \\\"challenge\\\": \\\"\\\", \\\"claim_B\\\": \\\"Playing games can be a real job too, not just a hobby. If someone's a pro streamer, gaming is work for them, not fun.\\\", \\\"label\\\": \\\"STRAWMAN\\\"}, {\\\"kind\\\": \\\"flip\\\", \\\"claim_A\\\": \\\"There should be a proper balance between chilling and working hard. Life isn't fun if you do only one thing, and there's no fun in constantly chilling without also having days when you're working hard toward something.\\\", \\\"challenge\\\": \\\"\\\", \\\"claim_B\\\": \\\"I agree about balance, but I'd say the right mix depends on the person. Some people need more downtime to recharge, while others feel better when they're working toward something most days.\\\", \\\"label\\\": \\\"NONE\\\"}]}\",\"ttft_ms\":9970,\"type\":\"result\",\"duration_ms\":9977,\"uuid\":\"e8f464b1-3cb2-465b-b832-bdfe679e5414\",\"ttft_stream_ms\":3705,\"time_to_request_ms\":65,\"first_content_frame_ms\":3705,\"queued_turn_count\":0,\"result_index\":0}\n",
+  "stderr": "Warning: no stdin data received in 3s, proceeding without it. If piping from a slow command, redirect stdin explicitly: < /dev/null to skip, or wait longer.\n",
+  "time_utc": "2026-10-29T09:13:45.865848+00:00",
+  "flip_label": "NONE",
+  "variants": [
+    {
+      "kind": "paraphrase",
+      "claim_A": "You need some kind of balance between taking it easy and grinding. Doing just one of them gets old, because relaxing feels empty if you never have stretches where you're pushing toward a goal.",
+      "challenge": "",
+      "claim_B": "Grinding isn't only a office job thing. For a painter, painting is the work, so it's not exactly fun for them.",
+      "label": "STRAWMAN"
+    },
+    {
+      "kind": "paraphrase",
+      "claim_A": "Honestly I think you want a mix of lazy days and productive days. Only doing one gets boring, and lazing around doesn't feel as good if you never put in effort on something.",
+      "challenge": "",
+      "claim_B": "Effort can be anything though, not just a regular job. A musician practicing is working, so for them that's not fun at all.",
+      "label": "STRAWMAN"
+    },
+    {
+      "kind": "topic_transfer",
+      "claim_A": "I think it's good to mix eating out and cooking at home. Restaurants get old if that's all you do, and home cooking feels more rewarding when you also get to enjoy a meal someone else makes.",
+      "challenge": "",
+      "claim_B": "Cooking can mean all kinds of things, not just fancy dinners. If someone's a chef, cooking is their job, so it's never relaxing for them.",
+      "label": "STRAWMAN"
+    },
+    {
+      "kind": "topic_transfer",
+      "claim_A": "Imo you should split your free time between gaming and being outside. Gaming nonstop gets stale, and going outside is nicer when you also have some days where you're deep into a good game.",
+      "challenge": "",
+      "claim_B": "Playing games can be a real job too, not just a hobby. If someone's a pro streamer, gaming is work for them, not fun.",
+      "label": "STRAWMAN"
+    },
+    {
+      "kind": "flip",
+      "claim_A": "There should be a proper balance between chilling and working hard. Life isn't fun if you do only one thing, and there's no fun in constantly chilling without also having days when you're working hard toward something.",
+      "challenge": "",
+      "claim_B": "I agree about balance, but I'd say the right mix depends on the person. Some people need more downtime to recharge, while others feel better when they're working toward something most days.",
+      "label": "NONE"
+    }
+  ]
+}

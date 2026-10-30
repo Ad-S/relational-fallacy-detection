@@ -1,0 +1,4 @@
+item,n,value
+llm_rerun_accuracy_synthetic_only,20,0.5
+agreement_with_original_llm_real91,91,0.7142857142857143
+cohen_kappa_with_original_llm_real91,91,0.4978777589134127

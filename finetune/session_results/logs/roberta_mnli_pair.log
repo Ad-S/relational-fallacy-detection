@@ -1,0 +1,31 @@
+{
+ "start_utc": "2026-10-30T14:35:48.019959+00:00",
+ "device": "cuda",
+ "python": "3.10.20",
+ "torch": "2.11.0+cu130",
+ "transformers": "5.20.2",
+ "gpu": "NVIDIA H200",
+ "gpu_mem_gb": 150.1,
+ "bf16_supported": true
+}
+[transformers] You passed `num_labels=2` which is incompatible to the `id2label` map of length `3`.
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 8094.69it/s]
+[transformers] [1mRobertaForSequenceClassification LOAD REPORT[0m from: FacebookAI/roberta-large-mnli
+Key                         | Status     |                                                                                         
+----------------------------+------------+-----------------------------------------------------------------------------------------
+roberta.pooler.dense.bias   | UNEXPECTED |                                                                                         
+roberta.pooler.dense.weight | UNEXPECTED |                                                                                         
+classifier.out_proj.bias    | MISMATCH   | Reinit due to size mismatch - ckpt: torch.Size([3]) vs model:torch.Size([2])            
+classifier.out_proj.weight  | MISMATCH   | Reinit due to size mismatch - ckpt: torch.Size([3, 1024]) vs model:torch.Size([2, 1024])
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISMATCH:	ckpt weights were loaded, but they did not match the original empty weight shapes.
+model loaded in 1.7s; 355M params
+[motte_bailey seed=0 fold=0] train_n=279 (aug 0) test_n=74 19.9s
+Traceback (most recent call last):
+  File "/home/finetune/train_cv.py", line 274, in <module>
+    main()
+  File "/home/finetune/train_cv.py", line 245, in main
+    assert not np.isnan(p).any(), "NaN predictions - stopping instead of writing bad results"
+AssertionError: NaN predictions - stopping instead of writing bad results

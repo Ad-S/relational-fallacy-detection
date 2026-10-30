@@ -1,0 +1,17 @@
+config,shape,seed,fold,pair_id,source,source_pair_id,kind,y,prob,pred,prob_masked,pred_masked
+session_roberta,motte_bailey,0,0,m006,reddit_cmv,,original,1,0.3711366057395935,0,0.371934711933136,0
+session_roberta,motte_bailey,0,0,m022,reddit_cmv,,original,0,0.3554392457008362,0,0.3554392457008362,0
+session_roberta,motte_bailey,0,0,m024,reddit_cmv,,original,1,0.4121456444263458,0,0.4320034980773926,0
+session_roberta,motte_bailey,0,0,m026,reddit_cmv,,original,0,0.37307605147361755,0,0.3917549252510071,0
+session_roberta,motte_bailey,0,0,m054,reddit_cmv,,original,0,0.38502776622772217,0,0.3845653831958771,0
+session_roberta,motte_bailey,0,0,m062,reddit_cmv,,original,1,0.38257384300231934,0,0.3652585446834564,0
+session_roberta,motte_bailey,0,0,m069,reddit_cmv,,original,1,0.3881540894508362,0,0.3932102620601654,0
+session_roberta,motte_bailey,0,0,m074,reddit_cmv,,original,0,0.424784779548645,0,0.42383435368537903,0
+session_roberta,strawman,0,0,s004,reddit_cmv,,original,1,0.5794004201889038,1,0.5974904298782349,1
+session_roberta,strawman,0,0,s005,reddit_cmv,,original,1,0.5109845399856567,1,0.5214711427688599,1
+session_roberta,strawman,0,0,s016,reddit_cmv,,original,0,0.5670977234840393,1,0.579340934753418,1
+session_roberta,strawman,0,0,s017,reddit_cmv,,original,1,0.5501240491867065,1,0.5726032853126526,1
+session_roberta,strawman,0,0,s019,reddit_cmv,,original,1,0.5720056891441345,1,0.5940214991569519,1
+session_roberta,strawman,0,0,s026,reddit_cmv,,original,1,0.6153768301010132,1,0.6238353252410889,1
+session_roberta,strawman,0,0,s035,reddit_cmv,,original,1,0.5578453540802002,1,0.5625370144844055,1
+session_roberta,strawman,0,0,s039,reddit_cmv,,original,0,0.547947883605957,1,0.554229199886322,1

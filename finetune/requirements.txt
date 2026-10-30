@@ -1,0 +1,5 @@
+# torch is provided by the Jarvislabs "pytorch" template; do not pin it here.
+transformers>=4.45
+scikit-learn
+pandas
+numpy

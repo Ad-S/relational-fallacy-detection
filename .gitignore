@@ -6,3 +6,9 @@ data/raw/
 *.dylib
 data/processed/candidates_motte.jsonl
 data/processed/candidates_strawman.jsonl
+
+# build artefacts and temporary run folders
+*.zip
+finetune/session_results_partial/
+finetune/results/
+**/.venv/

@@ -1,0 +1,10 @@
+{
+  "sec": 45.8,
+  "device": "cuda",
+  "args": {
+    "data": "data/dataset_augmented_all_v2.csv",
+    "seeds": "0,1,2",
+    "models": "deberta_nli,deberta_plain",
+    "smoke": false
+  }
+}

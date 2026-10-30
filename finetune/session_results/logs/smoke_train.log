@@ -1,0 +1,33 @@
+{
+ "start_utc": "2026-10-30T13:56:48.474866+00:00",
+ "device": "cuda",
+ "python": "3.10.20",
+ "torch": "2.11.0+cu130",
+ "transformers": "5.20.2",
+ "gpu": "NVIDIA H200",
+ "gpu_mem_gb": 150.1,
+ "bf16_supported": true
+}
+[transformers] You passed `num_labels=2` which is incompatible to the `id2label` map of length `3`.
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]Loading weights: 100%|██████████| 394/394 [00:00<00:00, 4470.15it/s]
+[transformers] [1mDebertaV2ForSequenceClassification LOAD REPORT[0m from: MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli
+Key               | Status   |                                                                                         
+------------------+----------+-----------------------------------------------------------------------------------------
+classifier.bias   | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([3]) vs model:torch.Size([2])            
+classifier.weight | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([3, 1024]) vs model:torch.Size([2, 1024])
+
+Notes:
+- MISMATCH:	ckpt weights were loaded, but they did not match the original empty weight shapes.
+model loaded in 2.6s; 435M params
+[motte_bailey seed=0 fold=0] train_n=16 (aug 0) test_n=8 1.2s
+[strawman seed=0 fold=0] train_n=16 (aug 0) test_n=8 0.6s
+
+=== summary (mean/std over seeds) ===
+              accuracy         f1     masked_accuracy     masked_f1    
+                 mean std   mean std            mean std      mean std
+shape                                                                 
+motte_bailey     0.50 NaN  0.000 NaN           0.625 NaN     0.400 NaN
+strawman         0.75 NaN  0.857 NaN           0.750 NaN     0.857 NaN
+
+RESULTS_DIR=/home/finetune/results/session_smoke
+wall 5.7s, 0.452 s/step

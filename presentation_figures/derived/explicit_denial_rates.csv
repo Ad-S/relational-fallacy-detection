@@ -1,0 +1,8 @@
+source,type_candidate,label,k,n,rate,ci_low,ci_high
+reddit_cmv,motte_bailey,MOTTE_BAILEY,16,20,0.8,0.5839782779742401,0.9193436467288
+reddit_cmv,motte_bailey,NONE,18,24,0.75,0.5510017468789357,0.8800079652065766
+reddit_cmv,strawman,NONE,0,24,0.0,0.0,0.13798057582897535
+reddit_cmv,strawman,STRAWMAN,0,23,0.0,0.0,0.14312112541726274
+synthetic_handwritten,motte_bailey,MOTTE_BAILEY,0,8,0.0,0.0,0.3244156195108769
+synthetic_handwritten,motte_bailey,NONE,0,6,0.0,0.0,0.3903430336530645
+synthetic_handwritten,strawman,STRAWMAN,0,6,0.0,0.0,0.3903430336530645

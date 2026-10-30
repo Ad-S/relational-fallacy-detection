@@ -1,0 +1,92 @@
+pair_id,type_candidate,label,gold,xgb,llm,category
+m002,motte_bailey,MOTTE_BAILEY,1,1,1,both correct
+m003,motte_bailey,MOTTE_BAILEY,1,1,1,both correct
+m005,motte_bailey,MOTTE_BAILEY,1,0,0,both wrong
+m006,motte_bailey,MOTTE_BAILEY,1,1,1,both correct
+m007,motte_bailey,MOTTE_BAILEY,1,1,1,both correct
+m008,motte_bailey,NONE,0,0,0,both correct
+m013,motte_bailey,NONE,0,0,0,both correct
+m015,motte_bailey,MOTTE_BAILEY,1,0,1,XGBoost only wrong
+m017,motte_bailey,NONE,0,0,0,both correct
+m020,motte_bailey,MOTTE_BAILEY,1,1,0,LLM only wrong
+m021,motte_bailey,NONE,0,0,0,both correct
+m022,motte_bailey,NONE,0,0,0,both correct
+m023,motte_bailey,NONE,0,0,0,both correct
+m024,motte_bailey,MOTTE_BAILEY,1,1,1,both correct
+s001,strawman,NONE,0,0,1,LLM only wrong
+s002,strawman,NONE,0,0,0,both correct
+s004,strawman,STRAWMAN,1,1,1,both correct
+s005,strawman,STRAWMAN,1,0,1,XGBoost only wrong
+s009,strawman,NONE,0,1,0,XGBoost only wrong
+s010,strawman,STRAWMAN,1,0,1,XGBoost only wrong
+s011,strawman,STRAWMAN,1,0,1,XGBoost only wrong
+s013,strawman,STRAWMAN,1,0,0,both wrong
+s016,strawman,NONE,0,0,0,both correct
+s017,strawman,STRAWMAN,1,1,0,LLM only wrong
+s018,strawman,NONE,0,1,0,XGBoost only wrong
+s019,strawman,STRAWMAN,1,1,0,LLM only wrong
+s020,strawman,NONE,0,0,0,both correct
+s022,strawman,NONE,0,0,0,both correct
+s023,strawman,NONE,0,1,0,XGBoost only wrong
+s024,strawman,STRAWMAN,1,1,1,both correct
+s025,strawman,NONE,0,0,0,both correct
+m026,motte_bailey,NONE,0,1,1,both wrong
+m028,motte_bailey,MOTTE_BAILEY,1,1,1,both correct
+m029,motte_bailey,NONE,0,1,1,both wrong
+m031,motte_bailey,MOTTE_BAILEY,1,0,1,XGBoost only wrong
+m032,motte_bailey,NONE,0,0,0,both correct
+m033,motte_bailey,MOTTE_BAILEY,1,0,1,XGBoost only wrong
+m034,motte_bailey,NONE,0,0,0,both correct
+m037,motte_bailey,NONE,0,0,0,both correct
+m038,motte_bailey,MOTTE_BAILEY,1,1,1,both correct
+m041,motte_bailey,NONE,0,1,0,XGBoost only wrong
+m044,motte_bailey,NONE,0,1,0,XGBoost only wrong
+m046,motte_bailey,NONE,0,1,0,XGBoost only wrong
+m048,motte_bailey,NONE,0,0,1,LLM only wrong
+m049,motte_bailey,NONE,0,0,0,both correct
+s026,strawman,STRAWMAN,1,0,1,XGBoost only wrong
+s030,strawman,STRAWMAN,1,0,1,XGBoost only wrong
+s034,strawman,STRAWMAN,1,1,1,both correct
+s035,strawman,STRAWMAN,1,0,1,XGBoost only wrong
+s037,strawman,STRAWMAN,1,1,1,both correct
+s038,strawman,NONE,0,0,0,both correct
+s039,strawman,NONE,0,0,0,both correct
+s041,strawman,NONE,0,0,1,LLM only wrong
+s042,strawman,NONE,0,0,0,both correct
+s043,strawman,STRAWMAN,1,1,1,both correct
+s044,strawman,STRAWMAN,1,1,1,both correct
+s045,strawman,NONE,0,0,0,both correct
+s046,strawman,NONE,0,0,0,both correct
+s047,strawman,STRAWMAN,1,1,1,both correct
+s048,strawman,NONE,0,0,0,both correct
+s049,strawman,NONE,0,0,1,LLM only wrong
+m051,motte_bailey,MOTTE_BAILEY,1,0,0,both wrong
+m052,motte_bailey,MOTTE_BAILEY,1,0,0,both wrong
+m053,motte_bailey,NONE,0,0,0,both correct
+m054,motte_bailey,NONE,0,0,0,both correct
+m055,motte_bailey,NONE,0,0,0,both correct
+m056,motte_bailey,MOTTE_BAILEY,1,1,0,LLM only wrong
+m060,motte_bailey,NONE,0,1,0,XGBoost only wrong
+m061,motte_bailey,MOTTE_BAILEY,1,0,1,XGBoost only wrong
+m062,motte_bailey,MOTTE_BAILEY,1,1,1,both correct
+m063,motte_bailey,NONE,0,1,0,XGBoost only wrong
+m065,motte_bailey,NONE,0,0,0,both correct
+m069,motte_bailey,MOTTE_BAILEY,1,0,1,XGBoost only wrong
+m071,motte_bailey,MOTTE_BAILEY,1,0,1,XGBoost only wrong
+m072,motte_bailey,MOTTE_BAILEY,1,1,1,both correct
+m073,motte_bailey,NONE,0,0,1,LLM only wrong
+m074,motte_bailey,NONE,0,0,1,LLM only wrong
+s051,strawman,STRAWMAN,1,1,0,LLM only wrong
+s054,strawman,NONE,0,1,0,XGBoost only wrong
+s055,strawman,NONE,0,1,0,XGBoost only wrong
+s059,strawman,STRAWMAN,1,0,1,XGBoost only wrong
+s060,strawman,NONE,0,1,0,XGBoost only wrong
+s061,strawman,STRAWMAN,1,0,0,both wrong
+s062,strawman,STRAWMAN,1,1,1,both correct
+s064,strawman,NONE,0,1,1,both wrong
+s065,strawman,NONE,0,1,0,XGBoost only wrong
+s066,strawman,NONE,0,0,0,both correct
+s067,strawman,STRAWMAN,1,1,1,both correct
+s069,strawman,STRAWMAN,1,0,1,XGBoost only wrong
+s071,strawman,STRAWMAN,1,1,1,both correct
+s072,strawman,NONE,0,0,0,both correct

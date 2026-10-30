@@ -1,0 +1,37 @@
+{
+ "start_utc": "2026-10-30T13:56:58.526404+00:00",
+ "device": "cuda",
+ "python": "3.10.20",
+ "torch": "2.11.0+cu130",
+ "transformers": "5.20.2",
+ "gpu": "NVIDIA H200",
+ "gpu_mem_gb": 150.1,
+ "bf16_supported": true
+}
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] You passed `num_labels=2` which is incompatible to the `id2label` map of length `3`.
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 8085.59it/s]
+[transformers] [1mRobertaForSequenceClassification LOAD REPORT[0m from: FacebookAI/roberta-large-mnli
+Key                         | Status     |                                                                                         
+----------------------------+------------+-----------------------------------------------------------------------------------------
+roberta.pooler.dense.bias   | UNEXPECTED |                                                                                         
+roberta.pooler.dense.weight | UNEXPECTED |                                                                                         
+classifier.out_proj.bias    | MISMATCH   | Reinit due to size mismatch - ckpt: torch.Size([3]) vs model:torch.Size([2])            
+classifier.out_proj.weight  | MISMATCH   | Reinit due to size mismatch - ckpt: torch.Size([3, 1024]) vs model:torch.Size([2, 1024])
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISMATCH:	ckpt weights were loaded, but they did not match the original empty weight shapes.
+model loaded in 11.4s; 355M params
+[motte_bailey seed=0 fold=0] train_n=16 (aug 0) test_n=8 4.5s
+[strawman seed=0 fold=0] train_n=16 (aug 0) test_n=8 2.1s
+
+=== summary (mean/std over seeds) ===
+              accuracy         f1     masked_accuracy     masked_f1    
+                 mean std   mean std            mean std      mean std
+shape                                                                 
+motte_bailey     0.50 NaN  0.000 NaN            0.50 NaN     0.000 NaN
+strawman         0.75 NaN  0.857 NaN            0.75 NaN     0.857 NaN
+
+RESULTS_DIR=/home/finetune/results/session_roberta_smoke
+wall 20.1s, 1.651 s/step

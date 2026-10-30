@@ -1,0 +1,5 @@
+shape,model,n,positives,accuracy,precision,recall,f1,tn,fp,fn,tp
+motte_bailey,XGBoost,44,20,0.636,0.611,0.550,0.579,17,7,9,11
+motte_bailey,Zero-shot LLM,44,20,0.773,0.750,0.750,0.750,19,5,5,15
+strawman,XGBoost,47,23,0.617,0.619,0.565,0.591,16,8,10,13
+strawman,Zero-shot LLM,47,23,0.809,0.818,0.783,0.800,20,4,5,18

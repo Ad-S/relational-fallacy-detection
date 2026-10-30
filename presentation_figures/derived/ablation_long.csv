@@ -1,0 +1,13 @@
+dataset,shape,feature_set,n,accuracy,precision,recall,f1,majority_rate
+dataset_consolidated,motte_bailey,NLI only,44,0.659,0.647,0.55,0.595,0.5454545454545454
+dataset_consolidated,motte_bailey,Specificity only,44,0.455,0.4,0.4,0.4,0.5454545454545454
+dataset_consolidated,motte_bailey,NLI + Specificity,44,0.636,0.611,0.55,0.579,0.5454545454545454
+dataset_consolidated,strawman,NLI only,47,0.681,0.7,0.609,0.651,0.5106382978723405
+dataset_consolidated,strawman,Specificity only,47,0.532,0.522,0.522,0.522,0.5106382978723405
+dataset_consolidated,strawman,NLI + Specificity,47,0.617,0.619,0.565,0.591,0.5106382978723405
+dataset_final,motte_bailey,NLI only,58,0.724,0.731,0.679,0.704,0.5172413793103448
+dataset_final,motte_bailey,Specificity only,58,0.5,0.483,0.5,0.491,0.5172413793103448
+dataset_final,motte_bailey,NLI + Specificity,58,0.569,0.545,0.643,0.59,0.5172413793103448
+dataset_final,strawman,NLI only,53,0.566,0.594,0.655,0.623,0.5471698113207547
+dataset_final,strawman,Specificity only,53,0.528,0.571,0.552,0.561,0.5471698113207547
+dataset_final,strawman,NLI + Specificity,53,0.547,0.586,0.586,0.586,0.5471698113207547

@@ -1,0 +1,4 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]Loading weights:  90%|█████████ | 355/394 [00:00<00:00, 3547.34it/s]Loading weights: 100%|██████████| 394/394 [00:00<00:00, 3665.84it/s]
+{"rows": 16, "sec": 15.7, "device": "cuda"}
+wrote /home/finetune/results/features/dataset_augmented_all_v2_smoke_nli_features.csv

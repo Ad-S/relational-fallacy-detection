@@ -1,0 +1,10 @@
+{
+  "model": "Qwen/Qwen2.5-32B-Instruct",
+  "vllm": "0.31.0",
+  "rows": 683,
+  "load_sec": 329.2,
+  "generate_sec": 34.3,
+  "zeroshot_unparsed": 2,
+  "extract_unparsed": 0,
+  "gpu": "NVIDIA H200"
+}

@@ -1,0 +1,3 @@
+# vLLM brings its own compatible torch and transformers.
+vllm
+pandas

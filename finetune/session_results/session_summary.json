@@ -1,0 +1,172 @@
+{
+  "start": "13:56:10 UTC",
+  "hours_limit": 5.0,
+  "steps": [
+    {
+      "step": "smoke_features",
+      "status": "ok",
+      "minutes": 0.4,
+      "log": "results/logs/smoke_features.log",
+      "last_lines": [
+        "Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 394/394 [00:00<00:00, 3665.84it/s]",
+        "{\"rows\": 16, \"sec\": 15.7, \"device\": \"cuda\"}",
+        "wrote /home/finetune/results/features/dataset_augmented_all_v2_smoke_nli_features.csv"
+      ]
+    },
+    {
+      "step": "smoke_probing",
+      "status": "ok",
+      "minutes": 0.2,
+      "log": "results/logs/smoke_probing.log",
+      "last_lines": [
+        "[deberta_nli motte_bailey] n=30 layers=25 best AUC 0.658 at layer 11",
+        "[deberta_nli strawman] n=30 layers=25 best AUC 0.742 at layer 22",
+        "wrote /home/finetune/results/probing_smoke/probe_results.csv in 6s"
+      ]
+    },
+    {
+      "step": "smoke_train",
+      "status": "ok",
+      "minutes": 0.2,
+      "log": "results/logs/smoke_train.log",
+      "last_lines": [
+        "",
+        "RESULTS_DIR=/home/finetune/results/session_smoke",
+        "wall 5.7s, 0.452 s/step"
+      ]
+    },
+    {
+      "step": "smoke_roberta",
+      "status": "ok",
+      "minutes": 0.4,
+      "log": "results/logs/smoke_roberta.log",
+      "last_lines": [
+        "",
+        "RESULTS_DIR=/home/finetune/results/session_roberta_smoke",
+        "wall 20.1s, 1.651 s/step"
+      ]
+    },
+    {
+      "step": "features",
+      "status": "ok",
+      "minutes": 0.2,
+      "log": "results/logs/features.log",
+      "last_lines": [
+        "Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 394/394 [00:00<00:00, 3215.50it/s]",
+        "{\"rows\": 683, \"sec\": 7.9, \"device\": \"cuda\", \"check_rows\": 188, \"check_max_abs_diff\": 0.007800000000000029}",
+        "wrote /home/finetune/results/features/dataset_augmented_all_v2_nli_features.csv"
+      ]
+    },
+    {
+      "step": "nli_pair",
+      "status": "ok",
+      "minutes": 16.9,
+      "log": "results/logs/nli_pair.log",
+      "last_lines": [
+        "",
+        "RESULTS_DIR=/home/finetune/results/nli_pair",
+        "wall 1009.5s, 0.093 s/step"
+      ]
+    },
+    {
+      "step": "probing",
+      "status": "ok",
+      "minutes": 0.8,
+      "log": "results/logs/probing.log",
+      "last_lines": [
+        "[deberta_plain motte_bailey] n=353 layers=25 best AUC 0.696 at layer 9",
+        "[deberta_plain strawman] n=330 layers=25 best AUC 0.684 at layer 22",
+        "wrote /home/finetune/results/probing/probe_results.csv in 46s"
+      ]
+    },
+    {
+      "step": "nli_bonly",
+      "status": "ok",
+      "minutes": 10.5,
+      "log": "results/logs/nli_bonly.log",
+      "last_lines": [
+        "",
+        "RESULTS_DIR=/home/finetune/results/nli_bonly",
+        "wall 627.3s, 0.096 s/step"
+      ]
+    },
+    {
+      "step": "plain_pair",
+      "status": "ok",
+      "minutes": 9.9,
+      "log": "results/logs/plain_pair.log",
+      "last_lines": [
+        "",
+        "RESULTS_DIR=/home/finetune/results/plain_pair",
+        "wall 591.4s, 0.092 s/step"
+      ]
+    },
+    {
+      "step": "roberta_mnli_pair",
+      "status": "failed (exit 1)",
+      "minutes": 0.4,
+      "log": "results/logs/roberta_mnli_pair.log",
+      "last_lines": [
+        "  File \"/home/finetune/train_cv.py\", line 245, in main",
+        "    assert not np.isnan(p).any(), \"NaN predictions - stopping instead of writing bad results\"",
+        "AssertionError: NaN predictions - stopping instead of writing bad results"
+      ]
+    },
+    {
+      "step": "nli_pair_lr1e-5",
+      "status": "ok",
+      "minutes": 9.9,
+      "log": "results/logs/nli_pair_lr1e-5.log",
+      "last_lines": [
+        "",
+        "RESULTS_DIR=/home/finetune/results/nli_pair_lr1e-5",
+        "wall 591.0s, 0.091 s/step"
+      ]
+    },
+    {
+      "step": "nli_pair_lr3e-5",
+      "status": "ok",
+      "minutes": 10.0,
+      "log": "results/logs/nli_pair_lr3e-5.log",
+      "last_lines": [
+        "",
+        "RESULTS_DIR=/home/finetune/results/nli_pair_lr3e-5",
+        "wall 598.2s, 0.092 s/step"
+      ]
+    },
+    {
+      "step": "nli_pair_frac0.25",
+      "status": "ok",
+      "minutes": 3.2,
+      "log": "results/logs/nli_pair_frac0.25.log",
+      "last_lines": [
+        "",
+        "RESULTS_DIR=/home/finetune/results/nli_pair_frac0.25",
+        "wall 188.1s, 0.102 s/step"
+      ]
+    },
+    {
+      "step": "nli_pair_frac0.5",
+      "status": "ok",
+      "minutes": 5.8,
+      "log": "results/logs/nli_pair_frac0.5.log",
+      "last_lines": [
+        "",
+        "RESULTS_DIR=/home/finetune/results/nli_pair_frac0.5",
+        "wall 342.8s, 0.1 s/step"
+      ]
+    },
+    {
+      "step": "nli_pair_frac0.75",
+      "status": "ok",
+      "minutes": 8.0,
+      "log": "results/logs/nli_pair_frac0.75.log",
+      "last_lines": [
+        "",
+        "RESULTS_DIR=/home/finetune/results/nli_pair_frac0.75",
+        "wall 473.6s, 0.096 s/step"
+      ]
+    }
+  ],
+  "end": "15:13:08 UTC"
+}
